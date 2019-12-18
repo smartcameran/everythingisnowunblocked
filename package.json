@@ -1,0 +1,30 @@
+{
+  "name": "everythingisnowunblocked.com",
+  "description": "Web proxy for evading internet censorship",
+  "author": "Cameran Rith",
+  "version": "1.0.2",
+  "private": false,
+  "homepage": "http://everythingisnowunblocked.com",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "express": "^4.13.0",
+    "gatling": "~1.2.0",
+    "newrelic": "^6.2.0",
+    "serve": "^11.2.0",
+    "through": "^2.3.8",
+    "unblocker": "*"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "scripts": {
+    "start": "node ./node_modules/gatling/gatling.js ./app.js"
+  },
+  "license": "AGPL-3.0",
+  "devDependencies": {
+    "eslint": "^6.0.0",
+    "webpack": "^4.41.3",
+    "webpack-cli": "^3.3.10"
+  },
+  "main": "app.js"
+}
